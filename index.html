@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globalização - Geografia</title>
+
+  <style>
+    /* ======== ESTILOS GERAIS ======== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* ======== CABEÇALHO ======== */
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* ======== MENU DE NAVEGAÇÃO ======== */
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======== CONTAINER PRINCIPAL ======== */
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* ======== TÍTULOS ======== */
+    h2 {
+      color: #2c3e50;
+    }
+
+    /* ======== CARTÕES DE CONTEÚDO ======== */
+    .card {
+      background: #ecf0f1;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 5px solid #2980b9;
+      border-radius: 8px;
+    }
+
+    /* ======== RODAPÉ ======== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 30px;
+    }
+
+    /* ======== BOTÃO INTERATIVO ======== */
+    button {
+      background: #2980b9;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #1f6391;
+    }
+  </style>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Globalização - Geografia</h1>
+    <p>Entenda como o mundo está cada vez mais conectado</p>
+  </header>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav>
+    <a href="#conceito">Conceito</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#desvantagens">Desvantagens</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container">
+
+    <!-- Seção de Conceito -->
+    <section id="conceito">
+      <h2>🌍 O que é Globalização?</h2>
+      <div class="card">
+        <p>A globalização é o processo de integração econômica, cultural, social e política entre diferentes países do mundo. 
+        Ela é impulsionada pela tecnologia, comunicação e transporte.</p>
+      </div>
+    </section>
+
+    <!-- Seção de Vantagens -->
+    <section id="vantagens">
+      <h2>✅ Vantagens da Globalização</h2>
+      <div class="card">
+        <ul>
+          <li>Maior acesso a produtos e serviços.</li>
+          <li>Avanços tecnológicos e científicos.</li>
+          <li>Troca cultural entre diferentes povos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção de Desvantagens -->
+    <section id="desvantagens">
+      <h2>⚠️ Desvantagens da Globalização</h2>
+      <div class="card">
+        <ul>
+          <li>Aumento das desigualdades sociais.</li>
+          <li>Perda de culturas locais.</li>
+          <li>Exploração excessiva dos recursos naturais.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção Interativa -->
+    <section>
+      <h2>🔎 Curiosidade Interativa</h2>
+      <p>Clique no botão para descobrir uma curiosidade sobre globalização:</p>
+      <!-- Botão que chama a função em JavaScript -->
+      <button onclick="mostrarCuriosidade()">Mostrar Curiosidade</button>
+      <p id="curiosidade"></p>
+    </section>
+  </div>
+<img src="file:///C:/Users/isaac/OneDrive/Im%C3%A1genes/Capturas%20de%20tela/Captura%20de%20tela%202025-08-20%20202620.png" alt="Lamp" width="99" height="99"><p>Professor(a): Roselândia</p>
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 - Site de Geografia | Tema: Globalização</p>
+  </footer>
+
+  <!-- SCRIPT JAVASCRIPT -->
+  <script>
+    // Função para mostrar curiosidades aleatórias
+    function mostrarCuriosidade() {
+      // Lista de curiosidades
+      const curiosidades = [
+        "Mais de 4,5 bilhões de pessoas usam a internet, um grande exemplo da globalização digital.",
+        "O comércio internacional cresceu mais de 30 vezes desde 1950.",
+        "A globalização ajudou na disseminação de culturas, como música, cinema e moda."
+      ];
+
+      // Sorteia uma curiosidade aleatória
+      const sorteio = Math.floor(Math.random() * curiosidades.length);
+
+      // Mostra a curiosidade dentro do parágrafo com id 'curiosidade'
+      document.getElementById("curiosidade").innerText = curiosidades[sorteio];
+    }
+  </script>
+</body>
+</html>
